@@ -9,31 +9,31 @@ namespace VirtualPet
     public class Pet
     {
         //3 fields
-        private bool isHungry;
-        private bool isBored;
-        private bool isThirsty;
+        private int isHungry;
+        private int isBored;
+        private int isThirsty;
 
 
 
         //3 properties
 
-        public bool IsHungry
+        public int IsHungry
 
         {
             get { return this.isHungry; } //SEMI COLON INSIDE!!!!!
             set { this.isHungry = value; }
         }
 
-        public bool IsBored
+        public int IsBored
         {
             get { return this.isBored; }
             set { this.isBored = value; }
         }
 
-         public bool IsThrirsty
+         public int IsThirsty
         {
             get { return this.isThirsty; }
-            set { this.isBored = value; }
+            set { this.isThirsty = value; }
         }
 
 
@@ -43,7 +43,7 @@ namespace VirtualPet
             //DEFAULT
         }
 
-        public Pet(bool isBored, bool isHungry, bool isThirsty)
+        public Pet(int isBored, int isHungry, int isThirsty)
         {
             this.isBored = isBored;
             this.isHungry = isHungry;
@@ -52,40 +52,19 @@ namespace VirtualPet
 
 
         //3 methods
-        public string FeedPet()
+        public void FeedPet()
         {
-            if (isHungry == true)
-            {
-                Console.WriteLine("Here is some food pet");
-            }
-            else
-            {
-                Console.WriteLine("No food for you pet");
-            }
+            Console.WriteLine("You fed PET. Hunger level is now: " + (isHungry - 5));
         }
 
-        public string BoredPet()
+        public void BoredPet()
         {
-            if (isBored == true)
-            {
-                Console.WriteLine("Fetch The toy pet");
-            }
-            else
-            {
-                Console.WriteLine("Pet ignores you");
-            }
+            Console.WriteLine("You played with PET. Boredom level is now: " + (isBored - 1));
         }
 
-        public string ThirstyPet()
+        public void ThirstyPet()
         {
-            if (isThirsty == true)
-            {
-                Console.WriteLine("Here is some water pet");
-            }
-            else
-            {
-                Console.WriteLine("Pet ignores you");
-            }
+            Console.WriteLine("You gave PET water. Thirst level  is now: " + (isThirsty -5));
         }
         //tick method
 
