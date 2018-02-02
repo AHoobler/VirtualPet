@@ -13,14 +13,14 @@ namespace VirtualPet
 
             int ownerChoice;
             Pet ownerPet = new Pet();
-            //ownerPet.IsBored = 10;
-            //ownerPet.IsHungry = 10;
-            //ownerPet.IsThirsty = 10;
+            ownerPet.IsBored = 10;
+            ownerPet.IsHungry = 10;
+            ownerPet.IsThirsty = 10;
 
             do
             {
 
-                Console.WriteLine("PET the PET");
+                Console.WriteLine("PET the VIRTUALPET");
                 Console.WriteLine("PET's Hunger level is: " + ownerPet.IsHungry);
                 Console.WriteLine("PET's Thirst level is: " + ownerPet.IsThirsty);
                 Console.WriteLine("PET's Boredom level is: " + ownerPet.IsBored);

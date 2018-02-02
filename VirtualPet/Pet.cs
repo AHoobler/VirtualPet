@@ -54,17 +54,17 @@ namespace VirtualPet
         //3 methods
         public void FeedPet()
         {
-            Console.WriteLine("You fed PET. Hunger level is now: " + (isHungry - 5));
+            Console.WriteLine("You fed PET. Hunger level is now: " + (isHungry--));
         }
 
         public void BoredPet()
         {
-            Console.WriteLine("You played with PET. Boredom level is now: " + (isBored - 1));
+            Console.WriteLine("You played with PET. Boredom level is now: " + (isBored--));
         }
 
         public void ThirstyPet()
         {
-            Console.WriteLine("You gave PET water. Thirst level  is now: " + (isThirsty -5));
+            Console.WriteLine("You gave PET water. Thirst level  is now: " + (isThirsty--));
         }
         //tick method
 
