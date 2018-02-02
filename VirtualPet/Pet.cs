@@ -12,6 +12,7 @@ namespace VirtualPet
         private int isHungry;
         private int isBored;
         private int isThirsty;
+        private int isAngry;
 
 
 
@@ -36,6 +37,11 @@ namespace VirtualPet
             set { this.isThirsty = value; }
         }
 
+        public int IsAngry
+        {
+            get { return this.isAngry; }
+            set { this.isAngry = value; }
+        }
 
         //1 constructor
         public Pet()
@@ -54,24 +60,32 @@ namespace VirtualPet
         //3 methods
         public void FeedPet()
         {
-            Console.WriteLine("You fed PET. Hunger level is now: " + (isHungry--));
+            isHungry--;
+            isThirsty++;
+            Console.WriteLine("You fed PET.");
         }
 
         public void BoredPet()
         {
-            Console.WriteLine("You played with PET. Boredom level is now: " + (isBored--));
+            isBored--;
+            Console.WriteLine("You played with PET.");
         }
 
         public void ThirstyPet()
         {
-            Console.WriteLine("You gave PET water. Thirst level  is now: " + (isThirsty--));
+            isThirsty--;
+            isHungry++;
+            Console.WriteLine("You gave PET water.");
         }
         //tick method
 
-        //public void Tick()
-        //{
-
-        //}
+        public void Tick()
+        {
+            isAngry = (isAngry +10);
+            Console.WriteLine("Pet is Angry");
+           
+         
+        }
     }
 }
 

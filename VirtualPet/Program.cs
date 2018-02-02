@@ -16,6 +16,7 @@ namespace VirtualPet
             ownerPet.IsBored = 10;
             ownerPet.IsHungry = 10;
             ownerPet.IsThirsty = 10;
+            ownerPet.IsAngry = 50; 
 
             do
             {
@@ -24,6 +25,9 @@ namespace VirtualPet
                 Console.WriteLine("PET's Hunger level is: " + ownerPet.IsHungry);
                 Console.WriteLine("PET's Thirst level is: " + ownerPet.IsThirsty);
                 Console.WriteLine("PET's Boredom level is: " + ownerPet.IsBored);
+                Console.WriteLine("PET's Anger level is: " + ownerPet.IsAngry);
+                Console.WriteLine();
+                
                 //Must show stats for pet
 
                 Console.WriteLine("What do?");
@@ -31,7 +35,7 @@ namespace VirtualPet
                 Console.WriteLine("Press 2 to give PET water");
                 Console.WriteLine("Press 3 to play with PET");
                 Console.WriteLine("Press 5 to abandon PET");
-
+                Console.WriteLine();
                 ownerChoice = int.Parse(Console.ReadLine());
 
                 switch (ownerChoice)
@@ -46,6 +50,9 @@ namespace VirtualPet
                         ownerPet.BoredPet();
                         break;
                 }
+                Console.WriteLine();
+                ownerPet.Tick();
+                
             } while (ownerChoice != 5);
             Console.WriteLine("PET is sad");
         }
