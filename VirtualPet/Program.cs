@@ -21,21 +21,20 @@ namespace VirtualPet
             do
             {
 
-                Console.WriteLine("PET the VIRTUALPET");
-                Console.WriteLine("PET's Hunger level is: " + ownerPet.IsHungry);
-                Console.WriteLine("PET's Thirst level is: " + ownerPet.IsThirsty);
-                Console.WriteLine("PET's Boredom level is: " + ownerPet.IsBored);
-                Console.WriteLine("PET's Anger level is: " + ownerPet.IsAngry);
+                Console.WriteLine("Jasper the grumpy dog");
+                Console.WriteLine("Jasper's Hunger level is: " + ownerPet.IsHungry);
+                Console.WriteLine("Jasper's Thirst level is: " + ownerPet.IsThirsty);
+                Console.WriteLine("Jasper's Boredom level is: " + ownerPet.IsBored);
+                Console.WriteLine("Jasper's Anger level is: " + ownerPet.IsAngry);
                 Console.WriteLine();
                 
                 //Must show stats for pet
 
-                Console.WriteLine("What do?");
-                Console.WriteLine("Press 1 to feed PET");
-                Console.WriteLine("Press 2 to give PET water");
-                Console.WriteLine("Press 3 to play with PET");
-                Console.WriteLine("Press 5 to abandon PET");
-                Console.WriteLine();
+                Console.WriteLine("What do you want to do?");
+                Console.WriteLine("Press 1 to feed Jasper");
+                Console.WriteLine("Press 2 to give Jasper water");
+                Console.WriteLine("Press 3 to play with Jasper");
+                Console.WriteLine("Press 5 to abandon Japer");
                 ownerChoice = int.Parse(Console.ReadLine());
 
                 switch (ownerChoice)
@@ -54,7 +53,7 @@ namespace VirtualPet
                 ownerPet.Tick();
                 
             } while (ownerChoice != 5);
-            Console.WriteLine("PET is sad");
+            Console.WriteLine("Jasper is sad");
         }
     }
 }

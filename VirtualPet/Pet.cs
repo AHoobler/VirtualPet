@@ -82,7 +82,7 @@ namespace VirtualPet
         public void Tick()
         {
             isAngry = (isAngry +10);
-            Console.WriteLine("Pet is Angry");
+            Console.WriteLine("You woke Jasper from his nap. Jasper is Angry");
            
          
         }
