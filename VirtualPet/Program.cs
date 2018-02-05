@@ -25,7 +25,7 @@ namespace VirtualPet
                 Console.WriteLine("Jasper's Hunger level is: " + ownerPet.IsHungry);
                 Console.WriteLine("Jasper's Thirst level is: " + ownerPet.IsThirsty);
                 Console.WriteLine("Jasper's Boredom level is: " + ownerPet.IsBored);
-                Console.WriteLine("Jasper's Anger level is: " + ownerPet.IsAngry);
+                Console.WriteLine("Jasper's Grumpiness level is: " + ownerPet.IsAngry);
                 Console.WriteLine();
                 
                 //Must show stats for pet

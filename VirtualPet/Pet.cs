@@ -61,7 +61,7 @@ namespace VirtualPet
         public void FeedPet()
         {
             isHungry--;
-            isThirsty++;
+            isThirsty++
             Console.WriteLine("You fed Jasper.");
         }
 
