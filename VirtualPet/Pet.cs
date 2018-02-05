@@ -62,27 +62,27 @@ namespace VirtualPet
         {
             isHungry--;
             isThirsty++;
-            Console.WriteLine("You fed PET.");
+            Console.WriteLine("You fed Jasper.");
         }
 
         public void BoredPet()
         {
             isBored--;
-            Console.WriteLine("You played with PET.");
+            Console.WriteLine("You played with Jasper.");
         }
 
         public void ThirstyPet()
         {
             isThirsty--;
             isHungry++;
-            Console.WriteLine("You gave PET water.");
+            Console.WriteLine("You gave Jasper water.");
         }
         //tick method
 
         public void Tick()
         {
             isAngry = (isAngry +10);
-            Console.WriteLine("You woke Jasper from his nap. Jasper is Angry");
+            Console.WriteLine("You woke Jasper from his nap. Jasper is grumpy");
            
          
         }
